@@ -91,10 +91,38 @@ This script contains a Python implementation of a neural network from scratch us
 - **`validation(x_val, y_val, weights, biases, activation_func, n_hidden, loss_function)`**:
   - Computes validation loss and accuracy.
 
+## Usage
+
+### Command-Line Arguments
+The `assignment1.py` script accepts the following command-line arguments:
+
+| Argument               | Description                                                                 | Default Value       | Options                              |
+|------------------------|-----------------------------------------------------------------------------|---------------------|--------------------------------------|
+| `-wp`, `--wandb_project` | Name of the Weights & Biases project.                                       | `"Fashion-mnist-test"` | Any string                           |
+| `-we`, `--wandb_entity`  | Weights & Biases entity (username or team name).                            | `"sai-sakunthala-indian-institute-of-technology-madras"` | Any valid W&B entity |
+| `-d`, `--dataset`        | Dataset to use.                                                            | `"fashion_mnist"`    | `"mnist"`, `"fashion_mnist"`         |
+| `-e`, `--epochs`         | Number of training epochs.                                                 | `10`                | Any positive integer                 |
+| `-b`, `--batch_size`     | Batch size for training.                                                   | `32`                | Any positive integer                 |
+| `-l`, `--loss`           | Loss function to use.                                                      | `"bce"`             | `"mse"`, `"bce"`                     |
+| `-o`, `--optimizer`      | Optimization algorithm to use.                                             | `"adam"`            | `"sgd"`, `"momentum"`, `"nag"`, `"rmsprop"`, `"adagrad"`, `"adadelta"`, `"adam"`, `"nadam"` |
+| `-lr`, `--learning_rate` | Learning rate for the optimizer.                                           | `0.001`             | Any positive float                   |
+| `-m`, `--momentum`       | Momentum value (used by Momentum and NAG optimizers).                      | `0.9`               | Any float between 0 and 1            |
+| `-beta`, `--beta`        | Beta value (used by RMSProp).                                              | `0.9`               | Any float between 0 and 1            |
+| `-beta1`, `--beta1`      | Beta1 value (used by Adam and Nadam).                                      | `0.9`               | Any float between 0 and 1            |
+| `-beta2`, `--beta2`      | Beta2 value (used by Adam and Nadam).                                      | `0.999`             | Any float between 0 and 1            |
+| `-eps`, `--epsilon`      | Epsilon value (used by optimizers).                                        | `1e-6`              | Any small positive float             |
+| `-w_d`, `--weight_decay` | Weight decay (L2 regularization).                                          | `0.0`               | Any non-negative float               |
+| `-w_i`, `--weight_init`  | Weight initialization method.                                              | `"Xavier"`          | `"random"`, `"Xavier"`               |
+| `-nhl`, `--num_layers`   | Number of hidden layers.                                                   | `3`                 | Any positive integer                 |
+| `-sz`, `--hidden_size`   | Number of neurons in each hidden layer.                                    | `128`               | Any positive integer                 |
+| `-a`, `--activation`     | Activation function to use.                                                | `"tanh"`            | `"sigmoid"`, `"tanh"`, `"ReLU"`      |
+
 ## Dependencies
 - **Python 3.x**
 - **NumPy**
 - **Keras (for dataset loading)**
 - **Weights & Biases (for logging)**
+- 
 first install the dependencies (pip install numpy keras wandb)
 and run the script as it is, the script is set with default parameter values that gave best validation accuracy
+
