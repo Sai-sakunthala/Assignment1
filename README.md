@@ -104,7 +104,7 @@ The `assignment1.py` script accepts the following command-line arguments:
 | `-e`, `--epochs`         | Number of training epochs.                                                 | `10`                | Any positive integer                 |
 | `-b`, `--batch_size`     | Batch size for training.                                                   | `32`                | Any positive integer                 |
 | `-l`, `--loss`           | Loss function to use.                                                      | `"bce"`             | `"mse"`, `"bce"`                     |
-| `-o`, `--optimizer`      | Optimization algorithm to use.                                             | `"adam"`            | `"sgd"`, `"momentum"`, `"nag"`, `"rmsprop"`, `"adagrad"`, `"adadelta"`, `"adam"`, `"nadam"` |
+| `-o`, `--optimizer`      | Optimization algorithm to use.                                             | `"adam"`            | `"sgd"`, `"momentum"`, `"nag"`, `"rmsprop"`, `"adadelta"`, `"adam"`, `"nadam"` |
 | `-lr`, `--learning_rate` | Learning rate for the optimizer.                                           | `0.001`             | Any positive float                   |
 | `-m`, `--momentum`       | Momentum value (used by Momentum and NAG optimizers).                      | `0.9`               | Any float between 0 and 1            |
 | `-beta`, `--beta`        | Beta value (used by RMSProp).                                              | `0.9`               | Any float between 0 and 1            |
@@ -127,7 +127,7 @@ first install the dependencies (pip install numpy keras wandb)
 and run the script as it is, the script is set with default parameter values that gave best validation accuracy
 
 ## Other codes
-- **Assignment1.ipynb** is the code using which i have performed adjustable wandb sweeps for Fashion MNIST data
+- **fashion mnist.ipynb** is the code using which i have performed adjustable wandb sweeps for Fashion MNIST data
 - **Mnist.ipynb** is the code where i ran best configurations with MNIST data
 - **test_data_log.ipynb** is the code i used to generate confusion matrix plot
 
