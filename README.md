@@ -57,8 +57,8 @@ This script contains a Python implementation of a neural network from scratch us
 - **`softmax(a_x)`**: Computes the softmax function for multi-class classification.
 
 ### 2. **Loss Functions**
-- **`bce_loss_function(h_x, y)`**: Computes the Binary Cross-Entropy (BCE) loss.
-- **`mse_loss_function(h_x, y)`**: Computes the Mean Squared Error (MSE) loss.
+- **`bce_loss_function(h_x, y)`**: Computes the Categorical Cross-Entropy loss.
+- **`mse_loss_function(h_x, y)`**: Computes the Mean Squared Error loss.
 
 ### 3. **Weight Initialization**
 - **`initialize_weights_xavier(num_neurons)`**: Initializes weights using Xavier initialization.
@@ -122,7 +122,12 @@ The `assignment1.py` script accepts the following command-line arguments:
 - **NumPy**
 - **Keras (for dataset loading)**
 - **Weights & Biases (for logging)**
-- 
+
 first install the dependencies (pip install numpy keras wandb)
 and run the script as it is, the script is set with default parameter values that gave best validation accuracy
+
+## Other codes
+- **Assignment1.ipynb** is the code using which i have performed adjustable wandb sweeps for Fashion MNIST data
+- **Mnist.ipynb** is the code where i ran best configurations with MNIST data
+- **test_data_log.ipynb** is the code i used to generate confusion matrix plot
 
