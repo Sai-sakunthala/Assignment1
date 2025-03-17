@@ -93,4 +93,8 @@ This script contains a Python implementation of a neural network from scratch us
 - **`validation(x_val, y_val, weights, biases, activation_func, n_hidden, loss_function)`**:
   - Computes validation loss and accuracy.
 
-
+## Dependencies
+**Python 3.x**
+**NumPy**
+**Keras (for dataset loading)**
+**Weights & Biases (for logging)**
