@@ -92,9 +92,9 @@ This script contains a Python implementation of a neural network from scratch us
   - Computes validation loss and accuracy.
 
 ## Dependencies
-**Python 3.x**
-**NumPy**
-**Keras (for dataset loading)**
-**Weights & Biases (for logging)**
+- **Python 3.x**
+- **NumPy**
+- **Keras (for dataset loading)**
+- **Weights & Biases (for logging)**
 first install the dependencies (pip install numpy keras wandb)
 and run the script as it is, the script is set with default parameter values that gave best validation accuracy
