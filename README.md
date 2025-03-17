@@ -14,8 +14,6 @@ This script contains a Python implementation of a neural network from scratch us
    - Training and Validation
 3. **Usage**
 4. **Dependencies**
-5. **Contributing**
-6. **License**
 ## Key Features
 1. **Datasets**:
    - Supports both Fashion MNIST and MNIST datasets.
@@ -98,3 +96,5 @@ This script contains a Python implementation of a neural network from scratch us
 **NumPy**
 **Keras (for dataset loading)**
 **Weights & Biases (for logging)**
+first install the dependencies (pip install numpy keras wandb)
+and run the script as it is, the script is set with default parameter values that gave best validation accuracy
